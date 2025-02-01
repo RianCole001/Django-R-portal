@@ -1,0 +1,39 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.divider-text span {
+    font-weight: bold;
+    color: #777;
+}
+
+.btn-block {
+    margin-top: 10px;
+}
+
+.form-control {
+    border-radius: 30px;
+}
+
+.input-group-text {
+    border-radius: 30px 0px 0px 30px;
+}
+
+.btn-twitter, .btn-facebook {
+    border-radius: 30px;
+}

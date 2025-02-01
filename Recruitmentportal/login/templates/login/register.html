@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    {% load static %}
+    <!-- Bootstrap 4.0 CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Toastify JS and CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+    <!-- Custom Styles (Linked to external CSS) -->
+    <link href="{% static 'login/register.css' %}" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+    <div class="text-center mt-5">
+        <h3 style="color: #333;">Welcome to Jumia Recruitment Portal</h3>
+        <p class="text-muted">Get started with your application</p>
+    </div>
+    <hr />
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px; background-color: white; border-radius: 10px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+            <p class="text-center">Get started with your Application</p>
+            <p>
+                <a href="" class="btn btn-block btn-outline-danger">
+                    <i class="fab fa-google"></i>   Login via Google
+                </a>
+                <a href="" class="btn btn-block btn-outline-primary">
+                    <i class="fab fa-facebook-f"></i>   Login via Facebook
+                </a>
+            </p>
+            <p class="divider-text">
+                <span>OR</span>
+            </p>
+            <form method="post" autocomplete="off" action="{% url 'register' %}">
+                {% csrf_token %}
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="Full name" type="text" name="username" required />
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                    </div>
+                    <input class="form-control" placeholder="Email address" type="email" name="email" required />
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <select class="custom-select" style="max-width: 120px">
+                        <option selected="">+254</option>
+                        <option value="1">+255</option>
+                        <option value="2">+256</option>
+                    </select>
+                    <input class="form-control" placeholder="Phone number" type="text" name="phone" required />
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fa fa-building"></i>
+                        </span>
+                    </div>
+                    <select class="form-control" name="job">
+                        <option selected="">Select job type</option>
+                        <option>Designer</option>
+                        <option>Manager</option>
+                        <option>Accounting</option>
+                        <option>Receptionist</option>
+                        <option>Cleaner</option>
+                        <option>Security</option>
+                        <option>Graphic Designer</option>
+                    </select>
+                </div>
+                <!-- form-group end.// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="Create password" type="password" name="password" required />
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="Repeat password" type="password" name="repeat_password" required />
+                </div>
+                <!-- form-group// -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-block">Create Account</button>
+                </div>
+                <!-- form-group// -->
+                <p class="text-center">Have an account? <a href="{% url 'login' %}">Log In</a></p>
+            </form>
+        </article>
+    </div>
+    <!-- card.// -->
+</div>
+<!--container end.//-->
+
+{% if messages %}
+    <script type="text/javascript">
+        {% for message in messages %}
+            Toastify({
+                text: "{{ message }}",
+                backgroundColor: "green",  /* Success background color */
+                duration: 3000,            /* Duration in milliseconds */
+                close: true,
+                gravity: "top",            /* Position of the toast */
+                position: "right",
+                stopOnFocus: true          /* Stops the toast on mouse hover */
+            }).showToast();
+        {% endfor %}
+    </script>
+{% endif %}
+
+</body>
+</html>
