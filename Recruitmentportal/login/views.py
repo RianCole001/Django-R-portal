@@ -1,12 +1,12 @@
 from django.shortcuts import render
- 
+from django.utils.timezone import now
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.contrib import messages
 from.models import Profile
 from django.contrib.auth.forms import PasswordResetForm
-
+from django .contrib.sessions.models import Session
 
 
 def user_login(request):
@@ -21,7 +21,8 @@ def user_login(request):
             # Log the user in
             login(request, user)
             messages.success(request, "You have successfully logged in!")
-            return redirect('home')  # Redirect to a home or dashboard page after successful login
+            request.session['last_login'] = str(now())  # Store last login time
+            return redirect('dashboard')  # Redirect to a home or dashboard page after successful login
         else:
             messages.error(request, "Invalid username or password.")
             return render(request, 'login/login.html')  # Reload the login page with an error message

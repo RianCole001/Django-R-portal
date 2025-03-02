@@ -1,5 +1,14 @@
+/* Set background color of the entire page to orange */
+html, body {
+    background-color: orange;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: To change the text color to make it more readable */
 body {
-    background-color: #f4f6f9;
+    color: white;
 }
 
 .card {

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" href="../Assets/images/fevicon.png" type="image/x-icon">
+    <!-- ================Bootstrap================ --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSI5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- ================For Icons================ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ================Custom Css=============== -->
+    <link rel="stylesheet" href="../css/main-2.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light padding_x_axis">
+        <a href="#" class="pt-0">
+            <img src="../Assets/images/icon.png" class="com_icon">
+        </a>
+        <button class="navbar-toggler ml-auto mt-3 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- ============sidebar============ -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 fixed-left sidebar">
+
+                        <div class="bottom-border pb-2 pt-2">
+                            <img src="../Assets/images/profile.png" width="40" class="rounded-circle mr-2">
+                            <a href="#" class=" text-white">CHRIS HEMS</a>
+                        </div>
+
+                        <ul class="navbar-nav flex-column down_side accordion text_parent">
+                            <li class="nav-item mt-2" data-toggle="collapse" data-target="#collapseOne">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-dashboard fa-lg mr-2"></i>Dashboard</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseOne" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../index.html"><i class="fa fa-money mr-2"></i> E-Com (Default)</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../dashboard/cryptocurrency.html"><i class="fa fa-cc mr-2"></i> Cryptocurrency</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item">
+                                <a href="../widgets/widgets.html" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink"><i class="fa fa-th-large fa-lg mr-2"></i>Widgets</a>
+                            </li>
+    
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseran">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-cube fa-lg mr-2"></i>Basic Item</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseran" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/accordions.html"><i class="fa fa-laptop"></i> Accordions</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/alerts.html"><i class="fa fa-exclamation-triangle"></i> Alerts</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/badges.html"><i class="fa fa-archive"></i> Badges</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/button.html"><i class="fa fa-power-off"></i> Button</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/dropdown.html"><i class="fa fa-arrow-circle-down"></i> Dropdown</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/media.html"><i class="fa fa-play"></i> Media</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/tooltip-popover.html"><i class="fa fa-mouse-pointer"></i> Tooltip & Popover</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../basic_item/typography.html"><i class="fa fa-edit"></i>Typography</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseThree">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-puzzle-piece fa-lg mr-2"></i>Complex Item</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseThree" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../complex_item/advanced-alert.html"><i class="fa fa-exclamation-circle"></i> Advanced Alert</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../complex_item/clipboard.html"><i class="fa fa-clipboard"></i> Clipboard</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../complex_item/full-calendar.html"><i class="fa fa-calendar"></i> Full Calendar</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../complex_item/media-player.html"><i class="fa fa-play"></i> Media Player</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../complex_item/progress.html"><i class="fa fa-spinner"></i> Progress</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseFour">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-smile-o fa-lg mr-2"></i>Icons</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseFour" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../icons/bootstrap-icons.html"><i class="fa fa-bold"></i> Bootstrap Icons</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../icons/fontawesome.html"><i class="fa fa-font-awesome"></i> Fontawesome Icons</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseFive">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-files-o fa-lg mr-2"></i>Forms</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseFive" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../forms/basic elements.html"><i class="fa fa-cube"></i> Basic Elements</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../forms/checkbox.html"><i class="fa fa-check-square"></i> Checkbox</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../forms/layout.html"><i class="fa fa-list-alt"></i> Layout</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../forms/radio.html"><i class="fa fa-stop-circle-o"></i> Radio</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseSix">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-bar-chart fa-lg mr-2"></i>Charts</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseSix" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../charts/chartJs.html"><i class="fa fa-line-chart"></i> ChartJs</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../charts/google-chart.html"><i class="fa fa-area-chart"></i> Google Chart</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../charts/morris-chart.html"><i class="fa fa-pie-chart"></i> Morris Chart</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseSeven">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-table fa-lg mr-2"></i>Tables</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseSeven" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../table/basic-table.html"><i class="fa fa-window-maximize"></i> Basic Table</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../table/advanced-table.html"><i class="fa fa-columns"></i> Advanced Table</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../table/responsive.html"><i class="fa fa-sticky-note-o"></i> Resonsive Table</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseEight">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-map fa-lg mr-2"></i>Maps</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseEight" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../maps/google-maps.html"><i class="fa fa-globe"></i> Google Maps</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../maps/vector-maps.html"><i class="fa fa-map-o"></i> Vector Maps</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseNine">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-address-book-o fa-lg mr-2"></i>Authentication</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse show" id="collapseNine" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../authentication/login.html"><i class="fa fa-sign-in"></i> Log In</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../authentication/signup.html"><i class="fa fa-sign-out"></i> Sign Up</a>
+                                    <a class="dropdown-item sidebarLink mb-1 active" href="../authentication/profile.html"><i class="fa fa-user-circle-o"></i> Profile</a>
+                                </div>
+                            </div>
+
+                            <li class="nav-item" data-toggle="collapse" data-target="#collapseTen">
+                                <a href="#" class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between">
+                                    <div><i class="fa fa-file-text-o fa-lg mr-2"></i>Pages</div>
+                                    <div><i class="fa fa-angle-down"></i></div>
+                                </a>
+                            </li>
+                            <div class="collapse" id="collapseTen" data-parent=".accordion">
+                                <div class="Parent">
+                                    <a class="dropdown-item sidebarLink mb-1" href="../pages/blank.html"><i class="fa fa-file-o"></i> Blank</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../pages/error.html"><i class="fa fa-ban"></i> Error</a>
+                                    <a class="dropdown-item sidebarLink mb-1" href="../pages/pricing.html"><i class="fa fa-ticket"></i> Pricing</a>
+                                </div>
+                            </div>
+
+                        </ul>
+
+                    </div>
+                    <!-- ===========sidebar stop============ -->
+
+                    <!-- =============top-nav=============== -->
+                    <div class="col-xl-12 col-lg-12 col-md-12 ml-auto fixed-top bg_top_nav py-2 top-navbar">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <a href="#"><img src="../Assets/images/icon.png" class="front_image"></a>
+                            </div>
+                            <div class="col-md-5">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input" placeholder="Search info here...">
+                                        <button type="button" class="btn btn-light search-button" data-toggle="tooltip" data-placement="bottom" title="Search">
+                                            <i class="fa fa-search text-danger"></i>
+                                        </button>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item icon-parent">
+                                        <a href="#" class="nav-link icon-bullet">
+                                            <i class="fa fa-comments text-muted fa-lg" data-toggle="tooltip" data-placement="bottom" title="Chats"></i>
+                                        </a>
+                                    </li> 
+                                    <li class="nav-item icon-parent">
+                                        <a href="#" class="nav-link icon-bullet">
+                                            <i class="fa fa-bell text-muted fa-lg" data-toggle="tooltip" data-placement="right" title="Notification"></i>  
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ml-md-auto">
+                                        <div class="ml-auto">
+                                            <div class="btn-group btn_m" data-toggle="tooltip" data-placement="left" title="Profile">
+                                                <button type="button" class="btn dropdown shadow-none" data-toggle="dropdown">
+                                                    <img src="../Assets/images/profile.png" height="40px" width="40px" class="rounded-circle scale_all">
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right box-shadow">               
+                                                    <a href="../authentication/login.html"><button class="dropdown-item btn_text" type="button"><i class="fa fa-sign-out"></i> Sign out</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>                                     
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- ============stop top-nav========== -->
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bismillah">
+        <div class="container-fluid allButFooter">
+            <section>
+                <div class="row">
+                    <div class="col-12">
+                        <div><h2 class="px py">Authentication<span class="Breadcrumb"> / Profile</span></h2></div>
+                    </div>
+    
+    
+                    <div class="col-12 mb-4">
+                        <div class="author-top">
+                            <div>
+                                <div class="Parenting">
+                                    <div class="image-avator bg-prfile">
+                                        <a href="../pages/error.html" title="Change Cover Photo"><span class="status-edit2 camera-p">📷</span></a>
+                                        <img src="../Assets/images/profile picture.jpg" height="150" width="150" class="main_pp rounded-circle">
+                                        <a href="../pages/error.html" title="Change Profile Picture"><span class="status-edit camera-p">📷</span></a>
+                                    </div>
+                                    <div class="info text-center">
+                                        <h5 class="text-dark text-p">Robert Downey Jr.</h5>
+                                        <span class="text-dark">UI UX Designer</span>
+                                        <a href="#" class="edit"><i class="fa fa-pencil text-dark" title="Edit Profile"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-xlg-12 col-lg-6 col-12 mb-4 rx_padding">
+                        <div class="box content_bg">
+                            <div class="box-head content_bg">
+                                <h3 class="title content_bg">Author Information</h3>
+                            </div>
+                            <div class="box-body content_bg body_bg">
+                                <div class="form">
+                                    <form action="#">
+                                        <div class="row row-10 mbn-20">
+                                            <div class="col-sm-6 col-12 mb-3"><input type="text" class="form-control light_black_bs" value="Madison"></div>
+                                            <div class="col-sm-6 col-12 mb-3"><input type="text" class="form-control light_black_bs" value="Howard"></div>
+                                            <div class="col-sm-6 col-12 mb-3"><input type="text" class="form-control light_black_bs input-date-single" value="02/13/2018"></div>
+                                            <div class="col-sm-6 col-12 mb-3"><input type="text" class="form-control light_black_bs" value="(012) 345-6789" data-mask="(999) 999-9999"></div>
+                                            <div class="col-12 mb-3"><input type="email" class="form-control light_black_bs" value="domain@mail.com"></div>
+                                            <div class="col-12 mb-3"><input type="text" class="form-control light_black_bs" value="https//: www.domain.com"></div>
+                                            <div class="col-sm-6 col-12 mb-3"><input type="password" class="form-control light_black_bs" value="password"></div>
+                                            <div class="col-sm-6 col-12 mb-3"><input type="password" class="form-control light_black_bs" value="password"></div>
+                                            <div class="col-12 mt-1 mb-0">
+                                                <input type="submit" class="btn btn-primary mr-2" value="Save Changes">
+                                                <input type="submit" class="btn btn-danger" value="Delete Changes">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-xlg-12 col-lg-6 col-12 mb-4 lx_padding">
+                        <div class="box content_bg">
+                            <div class="box-head content_bg">
+                                <h3 class="title content_bg">Daily Sale Report</h3>
+                            </div>
+                            <div class="box-body content_bg body_bg">
+                                <div>
+                                    <table class="table table_bottom_p">
+                                        <!-- Table Head Start -->
+                                        <thead>
+                                            <tr>
+                                                <th>Client</th>
+                                                <th>Detail</th>
+                                                <th>Payment</th>
+                                            </tr>
+                                        </thead><!-- Table Head End -->
+                                        <!-- Table Body Start -->
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-600">Alexander</td>
+                                                <td>
+                                                    <p>Sed do eiusmod tempor <br>incididunt ut labore.</p>
+                                                </td>
+                                                <td><span class="text-success d-flex justify-content-between fw-600">$500.00<span><i class="fa fa-info-circle text-success"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-600">Linda</td>
+                                                <td>
+                                                    <p>Sed do eiusmod tempor <br>incididunt ut labore.</p>
+                                                </td>
+                                                <td><span class="text-success d-flex justify-content-between fw-600">$20.00<span><i class="fa fa-info-circle text-success"></i></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-600">Patrick</td>
+                                                <td>
+                                                    <p>Sed do eiusmod tempor <br>incididunt ut labore.</p>
+                                                </td>
+                                                <td><span class="text-danger d-flex justify-content-between fw-600">$120.00<span><i class="fa fa-info-circle text-danger"></i></span></td>
+                                            </tr>
+                                        </tbody><!-- Table Body End -->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </section>
+        </div>
+        <footer class="content_bg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center mt-3">
+                        <p>&copy; 2020 copyright. Made with <i class="fa fa-heart text-danger"></i> by <a href="https://github.com/Sharif-Minhaz" class="text-primary">Minhaz</a></p>       
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- ==============Bootstrap script============= -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- =================Main script===============  -->
+    <script src="../js/style.js"></script>
+</body>
+</html>

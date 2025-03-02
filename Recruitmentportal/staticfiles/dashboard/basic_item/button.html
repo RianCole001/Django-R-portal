@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Buttons</title>
+		<link rel="shortcut icon" href="../Assets/images/fevicon.png" type="image/x-icon" />
+		<!-- ================Bootstrap================ -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSI5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+		/>
+		<!-- ================For Icons================ -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- ================Custom Css=============== -->
+		<link rel="stylesheet" href="../css/main-2.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-light padding_x_axis">
+			<a href="#" class="pt-0">
+				<img src="../Assets/images/icon.png" class="com_icon" />
+			</a>
+			<button
+				class="navbar-toggler ml-auto mt-3 bg-light"
+				type="button"
+				data-toggle="collapse"
+				data-target="#myNavbar"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- ============sidebar============ -->
+						<div class="col-xl-2 col-lg-3 col-md-4 fixed-left sidebar">
+							<div class="bottom-border pb-2 pt-2">
+								<img
+									src="../Assets/images/profile.png"
+									width="40"
+									class="rounded-circle mr-2"
+								/>
+								<a href="#" class="text-white">CHRIS HEMS</a>
+							</div>
+
+							<ul class="navbar-nav flex-column down_side accordion text_parent">
+								<li
+									class="nav-item mt-2"
+									data-toggle="collapse"
+									data-target="#collapseOne"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div>
+											<i class="fa fa-dashboard fa-lg mr-2"></i>Dashboard
+										</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseOne" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../index.html"
+											><i class="fa fa-money mr-2"></i> E-Com (Default)</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../dashboard/cryptocurrency.html"
+											><i class="fa fa-cc mr-2"></i> Cryptocurrency</a
+										>
+									</div>
+								</div>
+
+								<li class="nav-item">
+									<a
+										href="../widgets/widgets.html"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink"
+										><i class="fa fa-th-large fa-lg mr-2"></i>Widgets</a
+									>
+								</li>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseran"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-cube fa-lg mr-2"></i>Basic Item</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div
+									class="collapse show"
+									id="collapseran"
+									data-parent=".accordion"
+								>
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/accordions.html"
+											><i class="fa fa-laptop"></i> Accordions</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/alerts.html"
+											><i class="fa fa-exclamation-triangle"></i> Alerts</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/badges.html"
+											><i class="fa fa-archive"></i> Badges</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1 active"
+											href="../basic_item/button.html"
+											><i class="fa fa-power-off"></i> Button</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/dropdown.html"
+											><i class="fa fa-arrow-circle-down"></i> Dropdown</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/media.html"
+											><i class="fa fa-play"></i> Media</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/tooltip-popover.html"
+											><i class="fa fa-mouse-pointer"></i> Tooltip &
+											Popover</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../basic_item/typography.html"
+											><i class="fa fa-edit"></i>Typography</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseThree"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div>
+											<i class="fa fa-puzzle-piece fa-lg mr-2"></i>Complex
+											Item
+										</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseThree" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../complex_item/advanced-alert.html"
+											><i class="fa fa-exclamation-circle"></i> Advanced
+											Alert</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../complex_item/clipboard.html"
+											><i class="fa fa-clipboard"></i> Clipboard</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../complex_item/full-calendar.html"
+											><i class="fa fa-calendar"></i> Full Calendar</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../complex_item/media-player.html"
+											><i class="fa fa-play"></i> Media Player</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../complex_item/progress.html"
+											><i class="fa fa-spinner"></i> Progress</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseFour"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-smile-o fa-lg mr-2"></i>Icons</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseFour" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../icons/bootstrap-icons.html"
+											><i class="fa fa-bold"></i> Bootstrap Icons</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../icons/fontawesome.html"
+											><i class="fa fa-font-awesome"></i> Fontawesome Icons</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseFive"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-files-o fa-lg mr-2"></i>Forms</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseFive" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../forms/basic elements.html"
+											><i class="fa fa-cube"></i> Basic Elements</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../forms/checkbox.html"
+											><i class="fa fa-check-square"></i> Checkbox</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../forms/layout.html"
+											><i class="fa fa-list-alt"></i> Layout</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../forms/radio.html"
+											><i class="fa fa-stop-circle-o"></i> Radio</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseSix"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-bar-chart fa-lg mr-2"></i>Charts</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseSix" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../charts/chartJs.html"
+											><i class="fa fa-line-chart"></i> ChartJs</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../charts/google-chart.html"
+											><i class="fa fa-area-chart"></i> Google Chart</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../charts/morris-chart.html"
+											><i class="fa fa-pie-chart"></i> Morris Chart</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseSeven"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-table fa-lg mr-2"></i>Tables</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseSeven" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../table/basic-table.html"
+											><i class="fa fa-window-maximize"></i> Basic Table</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../table/advanced-table.html"
+											><i class="fa fa-columns"></i> Advanced Table</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../table/responsive.html"
+											><i class="fa fa-sticky-note-o"></i> Resonsive Table</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseEight"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-map fa-lg mr-2"></i>Maps</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseEight" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../maps/google-maps.html"
+											><i class="fa fa-globe"></i> Google Maps</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../maps/vector-maps.html"
+											><i class="fa fa-map-o"></i> Vector Maps</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseNine"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div>
+											<i class="fa fa-address-book-o fa-lg mr-2"></i
+											>Authentication
+										</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseNine" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../authentication/login.html"
+											><i class="fa fa-sign-in"></i> Log In</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../authentication/signup.html"
+											><i class="fa fa-sign-out"></i> Sign Up</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../authentication/profile.html"
+											><i class="fa fa-user-circle-o"></i> Profile</a
+										>
+									</div>
+								</div>
+
+								<li
+									class="nav-item"
+									data-toggle="collapse"
+									data-target="#collapseTen"
+								>
+									<a
+										href="#"
+										class="nav-link text-light padding_side_nav_btn mb-1 sidebarLink d-flex justify-content-between"
+									>
+										<div><i class="fa fa-file-text-o fa-lg mr-2"></i>Pages</div>
+										<div><i class="fa fa-angle-down"></i></div>
+									</a>
+								</li>
+								<div class="collapse" id="collapseTen" data-parent=".accordion">
+									<div class="Parent">
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../pages/blank.html"
+											><i class="fa fa-file-o"></i> Blank</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../pages/error.html"
+											><i class="fa fa-ban"></i> Error</a
+										>
+										<a
+											class="dropdown-item sidebarLink mb-1"
+											href="../pages/pricing.html"
+											><i class="fa fa-ticket"></i> Pricing</a
+										>
+									</div>
+								</div>
+							</ul>
+						</div>
+						<!-- ===========sidebar stop============ -->
+
+						<!-- =============top-nav=============== -->
+						<div
+							class="col-xl-12 col-lg-12 col-md-12 ml-auto fixed-top bg_top_nav py-2 top-navbar"
+						>
+							<div class="row align-items-center">
+								<div class="col-md-4">
+									<a href="#"
+										><img src="../Assets/images/icon.png" class="front_image"
+									/></a>
+								</div>
+								<div class="col-md-5">
+									<form>
+										<div class="input-group">
+											<input
+												type="text"
+												class="form-control search-input"
+												placeholder="Search info here..."
+											/>
+											<button
+												type="button"
+												class="btn btn-light search-button"
+												data-toggle="tooltip"
+												data-placement="bottom"
+												title="Search"
+											>
+												<i class="fa fa-search text-danger"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="col-md-3">
+									<ul class="navbar-nav">
+										<li class="nav-item icon-parent">
+											<a href="#" class="nav-link icon-bullet">
+												<i
+													class="fa fa-comments text-muted fa-lg"
+													data-toggle="tooltip"
+													data-placement="bottom"
+													title="Chats"
+												></i>
+											</a>
+										</li>
+										<li class="nav-item icon-parent">
+											<a href="#" class="nav-link icon-bullet">
+												<i
+													class="fa fa-bell text-muted fa-lg"
+													data-toggle="tooltip"
+													data-placement="right"
+													title="Notification"
+												></i>
+											</a>
+										</li>
+										<li class="nav-item ml-md-auto">
+											<div class="ml-auto">
+												<div
+													class="btn-group btn_m"
+													data-toggle="tooltip"
+													data-placement="left"
+													title="Profile"
+												>
+													<button
+														type="button"
+														class="btn dropdown shadow-none"
+														data-toggle="dropdown"
+													>
+														<img
+															src="../Assets/images/profile.png"
+															height="40px"
+															width="40px"
+															class="rounded-circle scale_all"
+														/>
+													</button>
+													<div
+														class="dropdown-menu dropdown-menu-right box-shadow"
+													>
+														<a href="../authentication/login.html"
+															><button
+																class="dropdown-item btn_text"
+																type="button"
+															>
+																<i class="fa fa-sign-out"></i> Sign
+																out
+															</button></a
+														>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- ============stop top-nav========== -->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="col-xl-10 col-lg-9 col-md-8 ml-auto bismillah">
+			<div class="container-fluid allButFooter">
+				<section>
+					<div class="row">
+						<div class="col-12">
+							<div>
+								<h2 class="px py">
+									Basic Elements<span class="Breadcrumb"> / Buttons</span>
+								</h2>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 rx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Default</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button type="button" class="btn mb-3 mr-2 btn-primary">
+										Primary
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-secondary">
+										Secondary
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-success">
+										Success
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-danger">
+										Danger
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-warning">
+										Warning
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-info">
+										Info
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-light">
+										Light
+									</button>
+									<button type="button" class="btn mb-3 mr-2 btn-dark">
+										Dark
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 lx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Outline</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button
+										type="button"
+										class="btn mb-3 mr-2 alert-outline-primary"
+									>
+										Primary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 alert-outline-secondary"
+									>
+										Secondary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 alert-outline-success"
+									>
+										Success
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 alert-outline-danger"
+									>
+										Danger
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 alert-outline-warning"
+									>
+										Warning
+									</button>
+									<button type="button" class="btn mb-3 mr-2 alert-outline-info">
+										Info
+									</button>
+									<button type="button" class="btn mb-3 mr-2 alert-outline-light">
+										Light
+									</button>
+									<button type="button" class="btn mb-3 mr-2 alert-outline-dark">
+										Dark
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 rx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Pill</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-primary"
+									>
+										Primary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-secondary"
+									>
+										Secondary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-success"
+									>
+										Success
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-danger"
+									>
+										Danger
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-warning"
+									>
+										Warning
+									</button>
+									<button type="button" class="btn mb-3 mr-2 badge-pill btn-info">
+										Info
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 mr-2 badge-pill btn-light"
+									>
+										Light
+									</button>
+									<button type="button" class="btn mb-3 mr-2 badge-pill btn-dark">
+										Dark
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 lx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Square</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-primary mr-2 alert-outline-primary"
+									>
+										Primary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-secondary mr-2 alert-outline-secondary"
+									>
+										Secondary
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-success mr-2 alert-outline-success"
+									>
+										Success
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-danger mr-2 alert-outline-danger"
+									>
+										Danger
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-warning mr-2 alert-outline-warning"
+									>
+										Warning
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-info mr-2 alert-outline-info"
+									>
+										Info
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-dark bg-light mr-2 alert-outline-light"
+									>
+										Light
+									</button>
+									<button
+										type="button"
+										class="btn mb-3 text-light bg-dark mr-2 alert-outline-dark"
+									>
+										Dark
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 rx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button With Icon</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button class="btn mb-3 mr-2 btn-light">
+										<span class="text-dark"
+											><i class="fa fa-check text-dark mr-2"></i>default</span
+										>
+									</button>
+									<button class="btn mb-3 mr-2 btn-primary">
+										<span><i class="fa fa-check mr-2"></i>primary</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-secondary">
+										<span><i class="fa fa-check mr-2"></i>secondary</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-success">
+										<span><i class="fa fa-check mr-2"></i>success</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-danger">
+										<span><i class="fa fa-check mr-2"></i>danger</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-warning">
+										<span><i class="fa fa-check mr-2"></i>warning</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-info">
+										<span><i class="fa fa-check mr-2"></i>info</span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-dark">
+										<span><i class="fa fa-check mr-2"></i>dark</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 lx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button With Icon Right</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button class="btn mb-3 mr-2 btn-light">
+										<span class="text-dark"
+											>default<i class="fa fa-check text-dark ml-2"></i
+										></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-primary">
+										<span>primary<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-secondary">
+										<span>secondary<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-success">
+										<span>success<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-danger">
+										<span>danger<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-warning">
+										<span>warning<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-info">
+										<span>info<i class="fa fa-check ml-2"></i></span>
+									</button>
+									<button class="btn mb-3 mr-2 btn-dark">
+										<span>dark<i class="fa fa-check ml-2"></i></span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 rx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Sizes</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button type="button" class="btn btn-sm btn-primary">
+										<span>small</span>
+									</button>
+									<button type="button" class="btn btn-sm btn-secondary">
+										<span>small</span>
+									</button>
+									<button type="button" class="btn btn-success">
+										<span>default</span>
+									</button>
+									<button type="button" class="btn btn-lg btn-danger">
+										<span>large</span>
+									</button>
+									<button type="button" class="btn btn-lg btn-warning">
+										<span>large</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 lx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Sizes with Icon</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button type="button" class="btn btn-sm btn-primary">
+										<span><i class="fa fa-check mr-2"></i>small</span>
+									</button>
+									<button type="button" class="btn btn-sm btn-secondary">
+										<span><i class="fa fa-check mr-2"></i>small</span>
+									</button>
+									<button type="button" class="btn btn-success">
+										<span><i class="fa fa-check mr-2"></i>default</span>
+									</button>
+									<button type="button" class="btn btn-lg btn-danger">
+										<span><i class="fa fa-check mr-2"></i>large</span>
+									</button>
+									<button type="button" class="btn btn-lg btn-warning">
+										<span><i class="fa fa-check mr-2"></i>large</span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 rx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Box</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button class="btn button-box btn-light">
+										<i class="fa fa-check text-dark"></i>
+									</button>
+									<button class="btn button-box btn-primary">
+										<i class="fa fa-check"></i>
+									</button>
+									<button class="btn button-box btn-secondary">
+										<i class="fa fa-check"></i>
+									</button>
+									<button class="btn button-box btn-success">
+										<i class="fa fa-check"></i>
+									</button>
+									<button class="btn button-box btn-danger">
+										<i class="fa fa-check"></i>
+									</button>
+									<button class="btn button-box btn-warning">
+										<i class="fa fa-check"></i>
+									</button>
+									<button class="btn button-box btn-info">
+										<i class="fa fa-check"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-12 mb-4 lx_padding">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button with Option</h4>
+								</div>
+								<div class="box-body content_bg body_bg">
+									<button class="btn button-box btn-light">
+										<i class="fa fa-cog text-dark"></i>
+									</button>
+									<button class="btn button-box btn-primary">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-secondary">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-success">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-danger">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-warning">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-info">
+										<i class="fa fa-cog"></i>
+									</button>
+									<button class="btn button-box btn-dark">
+										<i class="fa fa-cog"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- =================Button with social text============= -->
+						<div class="col-12 mb-4">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Social With Text</h4>
+								</div>
+								<div class="box-body content_bg body_bg icon_text">
+									<button class="btn btn-primary">
+										<i class="fa fa-android"></i><span>android</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-apple"></i><span>apple</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-behance"></i><span>behance</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-codepen"></i><span>codepen</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-dribbble"></i><span>dribbble</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-dropbox"></i><span>dropbox</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-eercast"></i><span>eercast</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-facebook"></i><span>facebook</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-github"></i><span>github</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-hdd-o"></i><span>google drive</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-globe"></i><span>google earth</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-google-wallet"></i
+										><span>google wallet</span>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-map-marker"></i><span>google maps</span>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-file-text"></i><span>google pages</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-play"></i><span>google play</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-google-plus"></i><span>google plus</span>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-google"></i><span>google</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-instagram"></i><span>instagram</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-css3"></i><span>css3</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-html5"></i><span>html5</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-meetup"></i><span>meetup</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-quora"></i><span>quora</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-lastfm"></i><span>lastfm</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-linkedin"></i><span>linkedin</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-paypal"></i><span>paypal</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-pinterest"></i><span>pinterest</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-telegram"></i><span>telegram</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-flask"></i><span>lab+</span>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-rss"></i><span>rss</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-share"></i><span>share</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-stack-overflow"></i
+										><span>stackoverflow</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-steam"></i><span>steam</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-twitter"></i><span>twitter</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-vk"></i><span>vk</span>
+									</button>
+									<button class="btn btn-light">
+										<i class="fa fa-wikipedia-w text-dark"></i
+										><span class="text-dark">wikipedia</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-windows"></i><span>windows</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-500px"></i><span>500px</span>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-themeisle"></i><span>themeisle</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-amazon"></i><span>amazon</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-buysellads"></i><span>buysellads</span>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-delicious"></i><span>delicious</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-grav"></i><span>grav</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-podcast"></i><span>podcast</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-flickr"></i><span>flickr</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-odnoklassniki"></i
+										><span>odnoklassniki</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-wpexplorer"></i><span>wpexplorer</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-gamepad"></i><span>playstation</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-reddit"></i><span>reddit</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-skype"></i><span>skype</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-slideshare"></i><span>slideshare</span>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-soundcloud"></i><span>soundcloud</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-tumblr"></i><span>tumblr</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-twitch"></i><span>twitch</span>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-vimeo"></i><span>vimeo</span>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-whatsapp"></i><span>whatsapp</span>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-steam-square"></i><span>steam</span>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-yahoo"></i><span>yahoo</span>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-youtube-play"></i><span>youtube play</span>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-youtube"></i><span>youtube</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- ==============Button with social text stop=========== -->
+
+						<div class="col-12 mb-3">
+							<div class="box content_bg">
+								<div class="box-head content_bg">
+									<h4 class="title content_bg">Button Social Box</h4>
+								</div>
+								<div class="box-body content_bg body_bg icon_text2">
+									<button class="btn btn-primary">
+										<i class="fa fa-android"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-apple"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-behance"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-codepen"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-dribbble"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-dropbox"></i>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-eercast"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-facebook"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-github"></i>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-hdd-o"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-globe"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-google-wallet"></i>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-map-marker"></i>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-file-text"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-play"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-google-plus"></i>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-google"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-instagram"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-css3"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-html5"></i>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-meetup"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-quora"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-lastfm"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-linkedin"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-paypal"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-pinterest"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-telegram"></i>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-flask"></i>
+									</button>
+									<button class="btn btn-dark"><i class="fa fa-rss"></i></button>
+									<button class="btn btn-primary">
+										<i class="fa fa-share"></i>
+									</button>
+									<button class="btn btn-warning">
+										<i class="fa fa-stack-overflow"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-steam"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-twitter"></i>
+									</button>
+									<button class="btn btn-info"><i class="fa fa-vk"></i></button>
+									<button class="btn btn-light">
+										<i class="fa fa-wikipedia-w text-dark"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-windows"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-500px"></i>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-themeisle"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-amazon"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-buysellads"></i>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-delicious"></i>
+									</button>
+									<button class="btn btn-info"><i class="fa fa-grav"></i></button>
+									<button class="btn btn-warning">
+										<i class="fa fa-podcast"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-flickr"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-odnoklassniki"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-wpexplorer"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-gamepad"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-reddit"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-skype"></i>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-slideshare"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-soundcloud"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-tumblr"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-twitch"></i>
+									</button>
+									<button class="btn btn-secondary">
+										<i class="fa fa-vimeo"></i>
+									</button>
+									<button class="btn btn-success">
+										<i class="fa fa-whatsapp"></i>
+									</button>
+									<button class="btn btn-dark">
+										<i class="fa fa-steam-square"></i>
+									</button>
+									<button class="btn btn-primary">
+										<i class="fa fa-yahoo"></i>
+									</button>
+									<button class="btn btn-danger">
+										<i class="fa fa-youtube-play"></i>
+									</button>
+									<button class="btn btn-info">
+										<i class="fa fa-youtube"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="content_bg">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12 text-center mt-3">
+							<p>
+								&copy; 2020 copyright. Made with
+								<i class="fa fa-heart text-danger"></i> by
+								<a href="https://github.com/Sharif-Minhaz" class="text-primary"
+									>Minhaz</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- ==============Bootstrap script============= -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<!-- ==============For notification============== -->
+		<script src="../Assets/Plugins/bootstrap-notify.js"></script>
+		<!-- =================Main script===============  -->
+		<script src="../js/main.js"></script>
+	</body>
+</html>
